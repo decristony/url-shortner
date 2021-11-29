@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400&display=swap');
+
+* {
+  margin     : 0;
+  padding    : 0;
+  font-family: 'Fjalla One';
+}
+
+h1 {
+  position   : relative;
+  top        : 4rem;
+  font-family: 'Fjalla One';
+  color      : #562349;
+}
+
+h2 {
+  font-family: 'Fjalla One';
+  color      : #562349;
+}
+
+
+body {
+  background     : url("https://cms.qz.com/wp-content/uploads/2018/12/firewatch_151012_02.png?quality=75&strip=all&w=1600&h=900") center center no-repeat;
+  background-size: cover;
+  width          : 100vw;
+  height         : 100vh;
+  display        : grid;
+  align-items    : center;
+  justify-items  : center;
+}
+
+.container {
+  background: #f8f4e5;
+  padding   : 50px 100px;
+  border    : 2px solid rgba(0, 0, 0, 1);
+  box-shadow: 15px 15px 1px #AD6989, 15px 15px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.container2 {
+  background : #f8f4e5;
+  padding    : 25px 50px;
+  border     : 2px solid rgba(0, 0, 0, 1);
+  align-items: center;
+  text-align : center;
+  box-shadow : 15px 15px 1px #AD6989, 15px 15px 1px 2px rgba(0, 0, 0, 1);
+}
+
+
+.short-url {
+  margin: 20px;
+}
+
+.short-url a {
+  color          : #f70073;
+  text-decoration: none;
+}
+
+input[type='url'] {
+  display      : block;
+  width        : 100%;
+  font-size    : 14pt;
+  line-height  : 14pt * 2;
+  font-family  : 'Fjalla One';
+  margin-bottom: 14pt * 2;
+  border       : none;
+  border-bottom: 5px solid rgba(0, 0, 0, 1);
+  background   : #f8f4e5;
+  min-width    : 250px;
+  padding-left : 5px;
+  outline      : none;
+  color        : rgba(0, 0, 0, 1);
+  margin-bottom: 1rem;
+}
+
+input[type='submit'] {
+  /* width: 100px; */
+  display       : block;
+  margin        : 0 auto;
+  line-height   : 'Fjalla One'* 2;
+  padding       : 0 20px;
+  background    : #ffa580;
+  letter-spacing: 2px;
+  transition    : .2s all ease-in-out;
+  outline       : none;
+  border        : 1px solid rgba(0, 0, 0, 1);
+  box-shadow    : 3px 3px 1px #FEE2B3, 3px 3px 1px 1px rgba(0, 0, 0, 1);
+  cursor        : pointer;
+}
+
+input[type='submit']:hover {
+  background: rgba(0, 0, 0, 1);
+  color     : white;
+  border    : 1px solid rgba(0, 0, 0, 1);
+}
+
+input[type='submit']::selection {
+  background: #ffc8ff;
+}
+
+p.error {
+  color: #f44336;
+}

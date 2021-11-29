@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encurtador de URL</title>
+  </head>
+  <body>
+    <h1>Encurtador de URL</h1>
+    <% if (locals.error) { %>
+    <p class="error"><%= error %></p>
+    <% } %>
+
+    <section class="container">
+      <form action="/" method="post">
+        <input type="url" name="url" id="url" placeholder="url aqui..." />
+        <input type="submit" value="criar url" />
+      </form>
+    </section>
+
+    <section class="container2">
+      <h2>Nova url aqui</h2>
+      <div class="short-url">
+        <% if (locals.short_url) { %>
+        <a href="<%= short_url %>"><%= short_url %> </a>
+        <% } %>
+      </div>
+    </section>
+  </body>
+</html>
